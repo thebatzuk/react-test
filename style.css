@@ -24,7 +24,7 @@ div {
   cursor: pointer;
 }
 .reset:hover {
-  background-color: WhiteSmoke;
+  background-color: LightYellow;
 }
 
 .box2 {
@@ -33,7 +33,7 @@ div {
   cursor: pointer;
 }
 .box2:hover {
-  background-color: WhiteSmoke;
+  background-color: LightYellow;
 }
 
 h2 {
