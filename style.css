@@ -1,0 +1,59 @@
+body {
+  background: white;
+  color: black;
+  font-size: 1.6em;
+  text-align: center;
+  margin: auto;
+  max-width: 680px
+}
+
+div {
+  'border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.reset {
+  border: 1px solid lightgray;
+  flex-grow: 3;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: WhiteSmoke;
+}
+
+.box2 {
+  border: 1px solid lightgray;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.box2:hover {
+  background-color: WhiteSmoke;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+#boxtitlemain {
+  color: firebrick;
+}
+
+#boxtitlesub {
+  color: orange;
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
