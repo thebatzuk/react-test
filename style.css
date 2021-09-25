@@ -44,7 +44,7 @@ h2 {
 }
 
 #boxtitlesub {
-  color: orange;
+  color: firebrick;
 }
 
 @media screen and (max-width: 500px) {
