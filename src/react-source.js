@@ -1,5 +1,6 @@
 
 const projectName = 'test';
+const boxes = 4;
 
 // COMPONENTS:
 function Box2(props) {
@@ -22,7 +23,7 @@ class Box1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clickcount: Array(3).fill(0)
+      clickcount: Array(boxes).fill(0)
     };
     this.clickCounter = this.clickCounter.bind(this);
   }
@@ -36,7 +37,7 @@ class Box1 extends React.Component {
 
   reset() {
     this.setState(prevState => ({
-      clickcount: Array(3).fill(0)
+      clickcount: Array(boxes).fill(0)
     }));
   }
 
@@ -65,6 +66,7 @@ class Box1 extends React.Component {
           {this.renderBox2(0)}
           {this.renderBox2(1)}
           {this.renderBox2(2)}
+          {this.renderBox2(3)}
         </div>
         <div className="box1">
           {this.renderReset()}

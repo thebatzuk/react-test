@@ -7,6 +7,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var projectName = 'test';
+var boxes = 4;
 
 // COMPONENTS:
 function Box2(props) {
@@ -43,7 +44,7 @@ var Box1 = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Box1.__proto__ || Object.getPrototypeOf(Box1)).call(this, props));
 
     _this.state = {
-      clickcount: Array(3).fill(0)
+      clickcount: Array(boxes).fill(0)
     };
     _this.clickCounter = _this.clickCounter.bind(_this);
     return _this;
@@ -65,7 +66,7 @@ var Box1 = function (_React$Component) {
     value: function reset() {
       this.setState(function (prevState) {
         return {
-          clickcount: Array(3).fill(0)
+          clickcount: Array(boxes).fill(0)
         };
       });
     }
@@ -108,7 +109,8 @@ var Box1 = function (_React$Component) {
           { className: "box1" },
           this.renderBox2(0),
           this.renderBox2(1),
-          this.renderBox2(2)
+          this.renderBox2(2),
+          this.renderBox2(3)
         ),
         React.createElement(
           "div",
